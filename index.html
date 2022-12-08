@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>product managment System</p>
+        </div>
+        <div class="inputs">
+            <input type="text" name="title" placeholder="title" id="title" />
+            <div class="price">
+                <input type="number" onkeyup="getTotal()" placeholder="price" name="price" id="price" />
+                <input type="number" onkeyup="getTotal()" placeholder="taxes" name="taxes" id="taxes" />
+                <input type="number" onkeyup="getTotal()" placeholder="ads" name="ads" id="ads" />
+                <input type="number" onkeyup="getTotal()" placeholder="discount" name="discount" id="discount" />
+                <small id="total"></small>
+            </div>
+            <input type="number" name="count" placeholder="count" id="count" />
+            <input type="text" name="category" placeholder="category" id="category" />
+            <button id="create">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input type="text" onkeyup="search(this.value)" placeholder="Search" name="search" id="search">
+                <div class="btnsearch">
+                    <button onclick="searchMood(this.id)" id="searchtitle" class="searchtitle">Search by title</button>
+                    <button onclick="searchMood(this.id)" id="searchcategory"class="searchcategory">Search by category</button>
+                </div>
+            </div>
+        </div>
+        <div id="deletall"></div>
+        <table>
+        <tr>
+            <th>ID</th>
+            <th>title</th>
+            <th>price</th>
+            <th> taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>Total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>Delete</th>
+
+        </tr>
+        <tbody id="tbody">
+
+      
+            
+        </tbody>
+    </table>
+    </div>
+    <button id="btnslider"><pre>^^</pre></button>
+    <script src="/maste.js"></script>
+</body>
+
+</html>
