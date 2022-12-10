@@ -108,19 +108,19 @@ var allproducts;
                     allproducts.push(newProduct);
                 }
             }
-        
             else{
         allproducts.push(newProduct);
     }
-}
-
-clearinputs();
-}
-else{
-    allproducts[temp]=newProduct;
-    count.style.display="block";
-    btncreate.innerHTML="Create";
-    mood="create";
+        }
+        
+    else{
+        allproducts[temp]=newProduct;
+        count.style.display="block";
+        btncreate.innerHTML="Create";
+        mood="create";
+        
+    }
+    clearinputs();
 
 }
         localStorage.setItem('product',JSON.stringify(allproducts));
